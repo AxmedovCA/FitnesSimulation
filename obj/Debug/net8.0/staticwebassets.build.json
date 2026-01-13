@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8j8bCepyqH7VS7haxn9iQs7oIvynWrcAo+xSEAEB3lc=",
+  "Hash": "6WnLkze3tpQBn/WIOmndns4wVOSiS4vKA6Ytk+FEtz4=",
   "Source": "FitnessSimulation",
   "BasePath": "_content/FitnessSimulation",
   "Mode": "Default",
@@ -16642,25 +16642,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\StepDZ\\FitnessSimulation\\wwwroot\\assets\\images\\12fe6821-e51b-446a-bf25-8e8138fe37acsalam3.jpg",
-      "SourceId": "FitnessSimulation",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\StepDZ\\FitnessSimulation\\wwwroot\\",
-      "BasePath": "_content/FitnessSimulation",
-      "RelativePath": "assets/images/12fe6821-e51b-446a-bf25-8e8138fe37acsalam3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\12fe6821-e51b-446a-bf25-8e8138fe37acsalam3.jpg"
-    },
-    {
       "Identity": "C:\\Users\\user\\Desktop\\StepDZ\\FitnessSimulation\\wwwroot\\assets\\images\\2f6ba6bf-7930-40a2-8a09-3425a1000bccsalaaammmm.jpg",
       "SourceId": "FitnessSimulation",
       "SourceType": "Discovered",
@@ -16678,6 +16659,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\2f6ba6bf-7930-40a2-8a09-3425a1000bccsalaaammmm.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\StepDZ\\FitnessSimulation\\wwwroot\\assets\\images\\b9493b16-4c74-45ab-9ed3-aef471833ebasalaaammmm.jpg",
+      "SourceId": "FitnessSimulation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\StepDZ\\FitnessSimulation\\wwwroot\\",
+      "BasePath": "_content/FitnessSimulation",
+      "RelativePath": "assets/images/b9493b16-4c74-45ab-9ed3-aef471833ebasalaaammmm.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\b9493b16-4c74-45ab-9ed3-aef471833ebasalaaammmm.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\StepDZ\\FitnessSimulation\\wwwroot\\assets\\images\\blog-author.jpg",

@@ -117,8 +117,8 @@ namespace FitnessSimulation.Areas.Admin.Controllers
             {
                 return View(trainerUpdaetVM);
             }
-            var existProduct = await _context.Trainers.FindAsync(trainerUpdaetVM.Id);
-            if(existProduct is null)
+            var existTrainer = await _context.Trainers.FindAsync(trainerUpdaetVM.Id);
+            if(existTrainer is null)
             {
                 return BadRequest();
             }
@@ -138,17 +138,17 @@ namespace FitnessSimulation.Areas.Admin.Controllers
                 ModelState.AddModelError("Image", "Ancaq sekil formatinda");
                 return View(trainerUpdaetVM);
             }
-            existProduct.FullName = trainerUpdaetVM.FullName;
-            existProduct.Experience = trainerUpdaetVM.Experience;
-            existProduct.CategoryId = trainerUpdaetVM.CategoryId;
+            existTrainer.FullName = trainerUpdaetVM.FullName;
+            existTrainer.Experience = trainerUpdaetVM.Experience;
+            existTrainer.CategoryId = trainerUpdaetVM.CategoryId;
             if(trainerUpdaetVM.Image is { })
             {
                 string newImagePath = await trainerUpdaetVM.Image.FileUploadAsync(folderPath);
-                string deleteImagePath = Path.Combine(folderPath, existProduct.ImagePath);
+                string deleteImagePath = Path.Combine(folderPath, existTrainer.ImagePath);
                 FileHelpers.FileDelete(deleteImagePath);
-                existProduct.ImagePath = newImagePath;
+                existTrainer.ImagePath = newImagePath;
             }
-            _context.Trainers.Update(existProduct);
+            _context.Trainers.Update(existTrainer);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

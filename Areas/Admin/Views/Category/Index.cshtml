@@ -1,0 +1,35 @@
+﻿@using FitnessSimulation.ViewModels.CategoryViewModel
+@model List<CategoryGetVM>
+
+<!-- content -->
+<div class="container">
+    <div class="row">
+        <div class="row">
+
+            <a asp-action="Create" class="btn btn-success">Create</a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                   
+                    <th scope="col">Name</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.Name</th>
+                        
+                        <td>
+                            <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-secondary"></a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"></a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
