@@ -1,0 +1,43 @@
+﻿
+@model List<TrainerGetVM>
+
+<!-- content -->
+	<div class="container">
+		<div class="row">
+            <div class="row">
+
+        <a asp-action="Create" class="btn btn-success">Create</a>
+            </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">FullName</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">CategoryName</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <th scope="row">
+                            <img src ="~/assets/images/@item.ImagePath" width="40" height="40">
+                        </th>
+                        <td>@item.FullName</td>
+                        <td>@item.Experience</td>
+                        <td>@item.CategoryName</td>
+                        <td>
+                            <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-secondary"></a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"></a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+		</div>
+	</div>
